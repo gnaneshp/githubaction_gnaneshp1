@@ -12,6 +12,8 @@ jobs:
         run: npm run lint
       - name: step4-test
         run: npm test
+      - name: step4-build
+        run: npm build
       - name: step5-deploy
         run: echo "deployed successfully!"
   
