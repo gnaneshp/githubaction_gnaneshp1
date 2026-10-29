@@ -9,7 +9,7 @@ jobs:
       - name: step2-install dependencies
         run: npm install
       - name: step3-lint
-        run: npm lint
+        run: npm run lint
       - name: step4-test
         run: npm test
       - name: step5-deploy
