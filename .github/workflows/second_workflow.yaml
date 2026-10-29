@@ -1,0 +1,10 @@
+name: second_workflow
+on: 
+  issues:
+    types: opened
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print_event
+        run: echo "{{ github }}"
