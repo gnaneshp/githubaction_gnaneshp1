@@ -1,5 +1,7 @@
 name: simple_workflow
-on: [push,workflow_dispatch]
+on: 
+  push:
+    branches: [main]
 jobs:
   first_job: 
     runs-on: ubuntu-latest
