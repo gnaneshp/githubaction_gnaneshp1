@@ -26,6 +26,8 @@ jobs:
     steps:
       - name: step1-checkout
         uses: actions/checkout@v7
+      - name: step2-install dependencies
+        run: npm install
       - name: step4-build
         run: npm run build
       - name: step5-deploy
